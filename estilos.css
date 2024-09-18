@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&#39');
+
+:root{
+    --branco:rgb(255, 255, 255);
+    --amarelo_ouro:rgb(253, 200, 7);
+    --preto100:rgb(0, 0, 0);
+    --preto90:rgb(32, 34, 38);
+}
+
+
+body{
+    background-color: var(--preto90);
+    font-family:Montserrat,Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+#banner{
+    background-image:url(/imagens/header.png);
+    height:700px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+   
+
+}
+
+#conteudo1{
+    color: var(--branco);
+    width: 40%;
+    margin-left: 200px;
+}
+
+#conteudo1 h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+#conteudo1 p:nth-of-type(1){
+    font-size: 17px;
+    font-weight: 600;
+}
+#conteudo1 p:nth-of-type(2){
+    font-size: 15px;
+    font-weight: 400;
+}
+#caixa1{
+    height: 25px;
+    width: 300px;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+}
+#bt1{
+    background-color: var(--amarelo_ouro);
+    color:var(--preto100);
+    margin-top: 10px;
+    height: 50px;
+    width: 320px;
+    text-align: center;
+    align-content: center;
+    border-radius: 2px 2px 2px 2px;
+    font-weight: 700;
+}
+
+#icon1{
+    
+    height: 202px;
+    width: 202px;
+    margin-left: 300px;
+}
+#conttxt1{
+   font-size: 15px;
+   text-align: justify;
+   line-height: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+   width: 800px;
+}
+#meio1{
+    color: var(--branco);
+    display: flex
+    
+}
+ #letra_des1{
+    color: var(--amarelo_ouro);
+    
+ }
+
+ #conttxt1 p{
+    line-height: 17px;
+    text-align: justify;
+    }
+
