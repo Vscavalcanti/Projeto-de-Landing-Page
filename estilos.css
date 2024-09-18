@@ -3,8 +3,9 @@
 :root{
     --branco:rgb(255, 255, 255);
     --amarelo_ouro:rgb(253, 200, 7);
-    --preto100:rgb(0, 0, 0);
+    --pretointercalado:rgba(0, 0, 0, 0.199);
     --preto90:rgb(32, 34, 38);
+    --preto100:rgb(0,0,0)
 }
 
 
@@ -65,28 +66,104 @@ body{
     
     height: 202px;
     width: 202px;
-    margin-left: 300px;
+    margin-left: 25%;
 }
 #conttxt1{
    font-size: 15px;
    text-align: justify;
-   line-height: 10px;
+   line-height: 27px;
     margin-top: 20px;
     margin-left: 10px;
    width: 800px;
 }
 #meio1{
     color: var(--branco);
-    display: flex
+    display: flex;
+    height: 300px;
+    align-items: center;
     
+}
+#meio2{
+    color: var(--branco);
+    display: flex;
+    height: 300px;
+    align-items: center;
+    background-color: var(--pretointercalado);
 }
  #letra_des1{
     color: var(--amarelo_ouro);
-    
  }
 
  #conttxt1 p{
-    line-height: 17px;
+    line-height: 20px;
     text-align: justify;
+    font-size: 20px;
     }
 
+    #autora{
+     color: var(--branco);
+     display: flex;
+     height: 800px;
+     align-items: center;
+    }
+    #txtautora{
+        align-items: center;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 27px;
+        padding-top: 50px;
+         margin-left: 50px;
+        width: 600px;
+        height: 600px;
+     }
+     #icon_autora{
+        background-image: url(/imagens/autora.png);
+        height: 500px;
+        width: 500px;
+        margin-left: 22%;
+        border-radius: 500px 500px 500px 500px;
+    }
+    #txtautora p{
+        font-size: 25px;
+        text-align: left;
+        line-height: 27px;
+         margin-top: 20px;
+         margin-left: 50px;
+        width: 500px;
+
+    }
+    #txtautora h1{
+        margin-left: 50px;
+    }
+    #bt2{
+        background-color: var(--amarelo_ouro);
+        color:var(--preto100);
+        margin-top: 10px;
+        height: 50px;
+        width: 320px;
+        text-align: center;
+        align-content: center;
+        border-radius: 2px 2px 2px 2px;
+        font-weight: 700;
+    }
+    #icon_cell{
+        border: solid red;
+        width: 10px;
+    }
+    
+    #txtcell{
+        border: solid red;
+        align-items: center;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 27px;
+         margin-left: 50px;
+        width: 600px;
+        height: 600px;
+    }
+    #cell{
+        border: solid red;
+    }
+    #bt2,#txtcell{
+     flex-direction: column;
+    }
