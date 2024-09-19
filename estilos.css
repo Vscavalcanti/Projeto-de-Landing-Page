@@ -5,7 +5,9 @@
     --amarelo_ouro:rgb(253, 200, 7);
     --pretointercalado:rgba(0, 0, 0, 0.199);
     --preto90:rgb(32, 34, 38);
-    --preto100:rgb(0,0,0)
+    --preto100:rgb(0,0,0);
+    --branco_sombra: rgba(216, 216, 216, 0.253);
+    --amarelo_chama:rgb(255, 238, 0);
 }
 
 
@@ -28,38 +30,47 @@ body{
 #conteudo1{
     color: var(--branco);
     width: 40%;
-    margin-left: 200px;
+    margin-left: 350px;
 }
 
 #conteudo1 h1{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 800;
 }
 
 #conteudo1 p:nth-of-type(1){
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 600;
 }
 #conteudo1 p:nth-of-type(2){
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 400;
 }
 #caixa1{
-    height: 25px;
-    width: 300px;
+    height: 50px;
+    width: 320px;
     border-radius: 10px 10px 10px 10px;
     text-align: center;
+    font-size:20px;
 }
+#bt1:hover{
+    background-color:var(--amarelo_chama);
+    box-shadow: 8px 4px 100px var(--branco_sombra) ;
+}
+
 #bt1{
+    box-shadow: 8px 8px 50px var(--preto100) ;
     background-color: var(--amarelo_ouro);
     color:var(--preto100);
     margin-top: 10px;
-    height: 50px;
-    width: 320px;
+    height: 60px;
+    width: 350px;
     text-align: center;
     align-content: center;
-    border-radius: 2px 2px 2px 2px;
+    border-radius:5px;
     font-weight: 700;
+    font-size: 20px;
+    transition: all 0.7;
 }
 
 #icon1{
@@ -135,8 +146,13 @@ body{
     #txtautora h1{
         margin-left: 50px;
     }
+    #bt2:hover{
+        background-color:var(--amarelo_chama);
+        box-shadow: 8px 4px 100px var(--branco_sombra) ;
+    }
+    
     #bt2{
-        border: solid red;
+    
         background-color: var(--amarelo_ouro);
         color:var(--preto100);
         margin-top: 10px;
@@ -144,24 +160,37 @@ body{
         width: 460px;
         text-align: center;
         align-content: center;
-        border-radius: 4px 4px 4px 4px;
+        border-radius:5px;
         font-weight: 700;
+        box-shadow: 6px 6px 50px ;
     }
     #icon_cell{
-        border: solid red;
-        width: 10px;
+        margin-left: 7%;
+        width: 300px;
+        height: 400px;
     }
     
     #txtcell{
-        border: solid red;
+        color: var(--branco);
         align-items: center;
-        font-size: 27px;
+        font-size: 25px;
         text-align: justify;
-         margin-left: 50px;
-        width: 650px;
-        height: 1000px;
+         margin-left: 25% !important;
+        width: 600px;
+        height: 800px;
         align-content: center;
     }
     #cell{
-        border: solid red;
+        display: flex;
     }
+    #copy{
+        margin-top: 50px;
+        height: 100px;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        font-size: 25px;
+        color: var(--branco);
+    }
+    
