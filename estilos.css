@@ -12,6 +12,7 @@
 
 
 body{
+    justify-content: center;
     background-color: var(--preto90);
     font-family:Montserrat,Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -21,16 +22,12 @@ body{
     background-image:url(/imagens/header.png);
     height:700px;
     background-size: cover;
-    display: flex;
-    align-items: center;
-   
-
 }
 
 #conteudo1{
     color: var(--branco);
-    width: 40%;
-    margin-left: 350px;
+    width: 500px;
+    margin-left: 250px;
 }
 
 #conteudo1 h1{
@@ -71,6 +68,7 @@ body{
     font-weight: 700;
     font-size: 20px;
     transition: all 0.7;
+
 }
 
 #icon1{
@@ -165,9 +163,9 @@ body{
         box-shadow: 6px 6px 50px ;
     }
     #icon_cell{
-        margin-left: 7%;
-        width: 300px;
-        height: 400px;
+        justify-content: center;
+        width: 250px;
+        height: 350px;
     }
     
     #txtcell{
@@ -193,4 +191,130 @@ body{
         font-size: 25px;
         color: var(--branco);
     }
+
+        
+#conteudo11mobile{
+    display: none;
+}
+    /*configuração Mobile e Tablet*/
+    @media screen and (max-width:1024PX) {
+        #banner{
+        height: 250px;
+        margin-bottom: 450px;
+        }
+        #conteudo1{
+            margin-left: 1px;
+            width: 250px;
+        }  
+        #conteudo1 h1{
+            margin-left: 20px;
+            padding-top: 23px;
+            font-size: 25px;
+            text-align: left;
+        }
+
+        #conteudo1 p{
+            width: 350px;
+            text-align: center;
+        }
+        #conteudo1 p:nth-of-type(2){
+            text-align: left;
+        }
+        #conteudo11mobile{
+            color: var(--branco);
+            margin: 0px;
+            background-color: var(--pretointercalado);
+            align-items: center;
+            height: 400px;
+            justify-content: center;
+            padding: 25px;
+            align-content: center;
+            display: flex!important;
+            flex-direction: column;
+        
+            
+        }
+        #conteudo11mobile p:nth-of-type(1){
+            font-size: 24px;
+            font-weight: 500;
+            text-align: center;
+        }
+        #conteudo11mobile p:nth-of-type(2){
+            font-size: 15px;
+            font-weight: 400;
+        }
+        #caixa1{
+            height: 50px;
+            width: 350px;
+            border-radius: 10px 10px 10px 10px;
+            text-align: center;
+            font-size:20px;
     
+        }
+        #bt1:hover{
+            background-color:var(--amarelo_chama);
+            box-shadow: 8px 4px 100px var(--branco_sombra) ;
+        }
+        
+        #bt1{
+            box-shadow: 8px 8px 50px var(--preto100) ;
+            background-color: var(--amarelo_ouro);
+            color:var(--preto100);
+            margin-top: 10px;
+            height: 60px;
+            width: 360px;
+            text-align: center;
+            align-content: center;
+            border-radius:5px;
+            font-weight: 700;
+            font-size: 20px;
+            transition: all 0.7;
+        
+        }
+        
+        #icon1 img{
+           height: 140px;
+           width: 130px;
+           margin-bottom: -210px;
+        }
+            #meio1 , #meio2{
+                
+                height: auto;
+                justify-content: center;
+                flex-direction: column;
+                display: flex;
+        }
+        #conttxt1{
+            align-content: center;
+            width: 350px;
+            padding: 10px;
+        }
+        #conttxt1 h1{
+            font-size: 24px;
+            text-align: left;   
+        }
+
+       #conttxt1 p{
+            font-size: 17px;
+            text-align: justify;
+        }
+        
+
+        #conteudo1 #sofrimento{
+            display: none;
+        }
+        #icon_autora{
+           border: solid red;
+            height: 500px;
+            width: 500px;
+            margin-left: 22%;
+            border-radius: 500px 500px 500px 500px;
+        }
+    }
+    
+    
+
+     /*configuração extra pc*/
+     @media screen  and(min-width:1025px){
+   
+    }
