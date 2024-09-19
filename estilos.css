@@ -136,14 +136,15 @@ body{
         margin-left: 50px;
     }
     #bt2{
+        border: solid red;
         background-color: var(--amarelo_ouro);
         color:var(--preto100);
         margin-top: 10px;
-        height: 50px;
-        width: 320px;
+        height: 70px;
+        width: 460px;
         text-align: center;
         align-content: center;
-        border-radius: 2px 2px 2px 2px;
+        border-radius: 4px 4px 4px 4px;
         font-weight: 700;
     }
     #icon_cell{
@@ -154,16 +155,13 @@ body{
     #txtcell{
         border: solid red;
         align-items: center;
-        font-size: 20px;
+        font-size: 27px;
         text-align: justify;
-        line-height: 27px;
          margin-left: 50px;
-        width: 600px;
-        height: 600px;
+        width: 650px;
+        height: 1000px;
+        align-content: center;
     }
     #cell{
         border: solid red;
-    }
-    #bt2,#txtcell{
-     flex-direction: column;
     }
